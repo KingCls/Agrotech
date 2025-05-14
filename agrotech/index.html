@@ -1,157 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>AgroTech</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
-</head>
-<body>
-    <section class="landing">
 
-        <div class="bg-container">
-            <div class="container">
-                
-                <!-- Logo -->
-                <div class="logo text-center">
-                    <h6>AgroTECH</h6>
-                </div>
-                
-                <!-- NavBar -->
-                <nav class="custom-navbar mb-4">
-                    <div class="navbar">
-                        <ul class="nav justify-content-center">
-                            <li class="effect"><a href="#">Início</a></li>
-                            <li class="effect"><a href="#">Sobre</a></li>
-                            <li class="effect"><a href="#">Quem somos</a></li>
-                            <li class="effect"><a href="#">Contato</a></li>
-                            <li><a href="#"><span class="material-symbols-outlined">search</span></a></li>
-                        </ul>
-                    </div> 
-                    
-                    <!-- Titulo -->
-                    <div class="titulo">
-                        <div id="titulo-agro">
-                            <h2>AGRICULTURA SUSTENTÁVEL</h2>
-                        </div>
-                        <div class="botao">
-                            <button id="btn">Saiba Mais</button>
-                        </div>
-                    </div>
-                    
-                    <!-- Pequena descrição do site -->
-                    <div class="descricao">
-                        <div class="caixas">
-                            <div class="imagem">
-                                <img src="imgs/plantinha.png">
-                            </div>
-                            <div class="titulo">
-                                <p>Nosso Projeto</p>
-                            </div>
-                            <div class="texto">
-                                <p>
-                                    Este projeto usa tecnologia de ponta para monitorar lavouras com precisão, combinando sensores, IA e dados acessíveis. A proposta contribui com a ODS 2, promovendo uma produção agrícola mais eficiente, sustentável e voltada ao combate à fome.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="caixas" id="sobre-empresa">
-                            <div class="imagem">
-                                <img src="imgs/farm.png">
-                            </div>
-                            <div class="titulo">
-                                <p>Sobre a empresa</p>
-                            </div>
-                            <div class="texto">
-                                <p>
-                                    Somos um grupo de estudantes comprometidos com a inovação no campo. Este projeto foi desenvolvido como parte de um trabalho acadêmico com foco em soluções tecnológicas para a agricultura sustentável, alinhadas à ODS 2 da ONU. Acreditamos que, com tecnologia e propósito, é possível gerar impacto real.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="caixas">
-                            <div class="imagem">
-                                <img src="imgs/fale-conosco.png">
-                            </div>
-                            <div class="titulo">
-                                <p>Fale conosco</p>
-                            </div>
-                            <div class="texto">
-                                <p>
-                                    Quer saber como nossa tecnologia pode transformar sua lavoura e contribuir para uma agricultura mais eficiente e sustentável? Fale com a gente e descubra como fazer parte dessa mudança rumo ao combate à fome.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <!--  LANDING  -->
+    <section class="landing">
+      <div class="bg-container">
+        <div class="container">
+          <!-- Logo -->
+          <div class="logo text-center">
+            <h6>AgroTECH</h6>
+          </div>
+
+          <!-- NavBar -->
+          <nav class="custom-navbar mb-4">
+            <div class="navbar">
+              <ul class="nav justify-content-center">
+                <li class="effect"><a href="#">Início</a></li>
+                <li class="effect"><a href="#">Sobre</a></li>
+                <li class="effect"><a href="#">Quem somos</a></li>
+                <li class="effect"><a href="#">Contato</a></li>
+                <li>
+                  <a href="#">
+                    <span class="material-symbols-outlined">search</span>
+                  </a>
+                </li>
+              </ul>
             </div>
-        </section>
-        <section class="nosso-projeto">
-            <hr>
-            <div class="container">
-                <!-- Titulo -->
-                <div class="titulo-projeto text-center">
-                    <h2>Nosso Projeto</h2>
-                </div>
-    
-                <!-- Conteúdo do projeto -->
-                <div class="projeto-container">
-                    <div class="row">
-                        <!-- Imagem à esquerda -->
-                        <div class="col-lg-5">
-                            <div class="imagem-projeto">
-                                <img src="imgs/img-projeto.jpg" alt="Imagem do Projeto" class="img-fluid">
-                            </div>
-                        </div>
-    
-                        <!-- Caixas à direita -->
-                        <div class="col-lg-7">
-                            <div class="produtos-wrapper" id="produtos">
-                                <!-- Caixa 1 -->
-                                <div class="caixa-produto">
-                                    <div class="icone-produto" id="drone">
-                                        <img src="imgs/drone.png" alt="Drone">
-                                    </div>
-                                    <h5>Monitoramento inteligente</h5>
-                                    <p>Monitore sua lavoura de forma inteligente utilizando sensores para coletar dados essenciais, além de imagens de satélite e drones para obter uma visão ampla e detalhada da sua produção.</p>
-                                    <p class="frase">Tenha total visibilidade sobre sua lavoura</p>
-                                </div>
-    
-                                <!-- Caixa 2 -->
-                                <div class="caixa-produto">
-                                    <div class="icone-produto">
-                                        <img src="imgs/microchip.png" alt="Microchip">
-                                    </div>
-                                    <h5>Diagnóstico com IA</h5>
-                                    <p>Conte com diagnósticos precisos por meio de Inteligência Artificial, analisando dados com agilidade para identificar padrões, prever problemas e otimizar seu trabalho.</p>
-                                    <p class="frase">Antecipe o problema antes que ele apareça</p>
-                                </div>
-    
-                                <!-- Caixa 3 -->
-                                <div class="caixa-produto">
-                                    <div class="icone-produto">
-                                        <img src="imgs/dashboard.png" alt="Dashboard">
-                                    </div>
-                                    <h5>Relatório e Painel</h5>
-                                    <p>Acompanhe todas as informações da sua lavoura em relatórios completos e painéis interativos, facilitando a tomada de decisões com dados claros e em tempo real.</p>
-                                    <p class="frase">Tenha total visibilidade sobre sua lavoura</p>
-                                </div>
-    
-                                <!-- Caixa 4 -->
-                                <div class="caixa-produto">
-                                    <div class="icone-produto">
-                                        <img src="imgs/whatsapp.png" alt="WhatsApp">
-                                    </div>
-                                    <h5>Acessível via WhatsApp</h5>
-                                    <p>Tenha acesso a todas as informações da sua lavoura diretamente pelo WhatsApp, com praticidade e suporte onde e quando você precisar.</p>
-                                    <p class="frase">Sua lavoura na palma da mão</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </nav>
+
+          <!-- Título e Botão -->
+          <div class="titulo">
+            <div id="titulo-agro">
+              <h2>AGRICULTURA SUSTENTÁVEL</h2>
             </div>
-        </section>
-    </body>
+            <div class="botao">
+              <button id="btn">Saiba Mais</button>
+            </div>
+          </div>
+
+          <!-- Pequena Descrição -->
+          <div class="descricao">
+            <!-- Caixa 1 -->
+            <div class="caixas">
+              <div class="imagem">
+                <img src="imgs/plantinha.png" alt="Ícone de planta"/>
+              </div>
+              <div class="titulo">
+                <p>Nosso Projeto</p>
+              </div>
+              <div class="texto">
+                <p>
+                  Este projeto usa tecnologia de ponta para monitorar
+                  lavouras com precisão, combinando sensores, IA e dados
+                  acessíveis. A proposta contribui com a ODS 2, promovendo
+                  uma produção agrícola mais eficiente, sustentável e voltada
+                  ao combate à fome.
+                </p>
+              </div>
+            </div>
+
+            <!-- Caixa 2 -->
+            <div class="caixas" id="sobre-empresa">
+              <div class="imagem">
+                <img src="imgs/farm.png" alt="Ícone de fazenda"/>
+              </div>
+              <div class="titulo">
+                <p>Sobre a empresa</p>
+              </div>
+              <div class="texto">
+                <p>
+                  Somos um grupo de estudantes comprometidos com a inovação
+                  no campo. Este projeto foi desenvolvido como parte de um
+                  trabalho acadêmico com foco em soluções tecnológicas para a
+                  agricultura sustentável, alinhadas à ODS 2 da ONU. Acreditamos
+                  que, com tecnologia e propósito, é possível gerar impacto real.
+                </p>
+              </div>
+            </div>
+
+            <!-- Caixa 3 -->
+            <div class="caixas">
+              <div class="imagem">
+                <img src="imgs/fale-conosco.png" alt="Ícone de contato"/>
+              </div>
+              <div class="titulo">
+                <p>Fale conosco</p>
+              </div>
+              <div class="texto">
+                <p>
+                  Quer saber como nossa tecnologia pode transformar sua
+                  lavoura e contribuir para uma agricultura mais eficiente
+                  e sustentável? Fale com a gente e descubra como fazer parte
+                  dessa mudança rumo ao combate à fome.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOSSO PROJETO -->
+    <section class="nosso-projeto">
+      <hr />
+      <div class="container">
+        <!-- Título -->
+        <div class="titulo-projeto text-center">
+          <h2>Nosso Projeto</h2>
+        </div>
+
+        <!-- Conteúdo -->
+        <div class="projeto-container">
+          <div class="row">
+            <!-- Imagem -->
+            <div class="col-lg-5">
+              <div class="imagem-projeto">
+                <img
+                  src="imgs/img-projeto.jpg"
+                  alt="Imagem do Projeto"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+
+            <!-- Caixas -->
+            <div class="col-lg-7">
+              <div class="produtos-wrapper" id="produtos">
+                <!-- Caixa 1 -->
+                <div class="caixa-produto">
+                  <div class="icone-produto" id="drone">
+                    <img src="imgs/drone.png" alt="Drone"/>
+                  </div>
+                  <h5>Monitoramento inteligente</h5>
+                  <p>
+                    Monitore sua lavoura de forma inteligente utilizando
+                    sensores para coletar dados essenciais, além de imagens
+                    de satélite e drones para obter uma visão ampla e
+                    detalhada da sua produção.
+                  </p>
+                  <p class="frase">
+                    Tenha total visibilidade sobre sua lavoura
+                  </p>
+                </div>
+
+                <!-- Caixa 2 -->
+                <div class="caixa-produto">
+                  <div class="icone-produto">
+                    <img src="imgs/microchip.png" alt="Microchip"/>
+                  </div>
+                  <h5>Diagnóstico com IA</h5>
+                  <p>
+                    Conte com diagnósticos precisos por meio de Inteligência
+                    Artificial, analisando dados com agilidade para identificar
+                    padrões, prever problemas e otimizar seu trabalho.
+                  </p>
+                  <p class="frase">
+                    Antecipe o problema antes que ele apareça
+                  </p>
+                </div>
+
+                <!-- Caixa 3 -->
+                <div class="caixa-produto">
+                  <div class="icone-produto">
+                    <img src="imgs/dashboard.png" alt="Dashboard"/>
+                  </div>
+                  <h5>Relatório e Painel</h5>
+                  <p>
+                    Acompanhe todas as informações da sua lavoura em
+                    relatórios completos e painéis interativos, facilitando
+                    a tomada de decisões com dados claros e em tempo real.
+                  </p>
+                  <p class="frase">
+                    Tenha total visibilidade sobre sua lavoura
+                  </p>
+                </div>
+
+                <!-- Caixa 4 -->
+                <div class="caixa-produto">
+                  <div class="icone-produto">
+                    <img src="imgs/whatsapp.png" alt="WhatsApp"/>
+                  </div>
+                  <h5>Acessível via WhatsApp</h5>
+                  <p>
+                    Tenha acesso a todas as informações da sua lavoura
+                    diretamente pelo WhatsApp, com praticidade e suporte
+                    onde e quando você precisar.
+                  </p>
+                  <p class="frase">
+                    Sua lavoura na palma da mão
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE A EMPRESA -->
+    <section class="sobre-empresa-section">
+      <div class="container">
+        <div class="sobre-empresa">
+          <!-- Imagem -->
+          <div class="sobre-img">
+            <img src="imgs/cornfield.png" alt="Sobre a empresa"/>
+          </div>
+
+          <!-- Conteúdo -->
+          <div class="sobre-content">
+            <h2>Sobre a empresa</h2>
+
+            <div class="subtitulo">
+              <span>Nossa missão</span>
+              <hr />
+            </div>
+
+            <!-- Missão -->
+            <div class="text-box">
+              <p><strong>
+                Desenvolver soluções tecnológicas acessíveis que unam dados,
+                automação e inteligência artificial para apoiar agricultores
+                na tomada de decisões mais eficientes, promover uma produção
+                sustentável e contribuir com a erradicação da fome, alinhados
+                à ODS 2 da ONU.
+              </strong></p>
+            </div>
+
+            <!-- Bullets -->
+            <ul class="lista-missao">
+              <li><strong>Tecnologia acessível ao campo</strong></li>
+              <li><strong>Usar dados e IA para melhorar a produção agrícola</strong></li>
+              <li><strong>Ajuda o produtor a tomar decisões mais inteligentes</strong></li>
+              <li><strong>Incentivar uma agricultura mais sustentável</strong></li>
+              <li><strong>Contribuir com o combate à fome (ODS 2)</strong></li>
+            </ul>
+
+            <!-- Separador -->
+            <hr class="separator"/>
+
+            <!-- Encerramento -->
+            <div class="text-box">
+              <p><strong>
+                Somos uma equipe pequena, mas dedicada e qualificada, que
+                acredita no poder da tecnologia para construir um mundo mais
+                justo, sustentável e eficiente.
+              </strong></p>
+            </div>
+
+            <!-- Separador -->
+            <hr class="separator"/>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FALE CONOSCO -->
+    <section class="fale-section">
+      <div class="fale-overlay"></div>
+
+      <div class="container h-100">
+        <div class="row align-items-center h-100 gy-4">
+          <!-- Formulário -->
+          <div class="col-md-6 text-white">
+            <h2 class="fale-title">Fale conosco</h2>
+            <p class="fale-subtitle">
+              Restou alguma dúvida ou quer entrar em contato?
+            </p>
+
+            <div class="fale-form bg-dark bg-opacity-50 p-4 rounded">
+              <h5 class="mb-1">Mande uma mensagem</h5>
+              <h3 class="mb-3">Contato direto</h3>
+              <form>
+                <label for="nome" class="form-label">Seu nome</label>
+                <input
+                  type="text"
+                  id="nome"
+                  class="form-control mb-3"
+                  placeholder="Escreva aqui"
+                />
+
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control mb-3"
+                  placeholder="exemplo@gmail.com"
+                />
+
+                <label for="assunto" class="form-label">Assunto</label>
+                <input
+                  type="text"
+                  id="assunto"
+                  class="form-control mb-3"
+                  placeholder="Sobre o que você deseja falar"
+                />
+
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <textarea
+                  id="mensagem"
+                  class="form-control mb-3"
+                  rows="4"
+                  placeholder="Detalhe a sua mensagem"
+                ></textarea>
+
+                <button type="submit" class="btn btn-light">Enviar</button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Slogan -->
+          <div class="col-md-6 text-white text-md-end">
+            <h1 class="fale-slogan">
+              Tecnologia no campo,<br/>
+              inteligência na decisão
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
