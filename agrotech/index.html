@@ -331,6 +331,54 @@
       }
 
       document.addEventListener('DOMContentLoaded', iniciarNavegacaoSuave);
+
+      
+const nome = document.getElementById('nome');
+const email = document.getElementById('email');
+const assunto = document.getElementById('assunto');
+const mensagem = document.getElementById('mensagem');
+
+
+nome.addEventListener('invalid', function () {
+   nome.setCustomValidity('Por favor, insira um nome e sobrenome.');
+  });
+nome.addEventListener('input', function () {
+  nome.setCustomValidity('');
+  });
+
+email.addEventListener('invalid', function () {
+  email.setCustomValidity('Por favor, insira um email válido.');
+});
+email.addEventListener('input', function () {
+  email.setCustomValidity('');
+});
+
+
+assunto.addEventListener('invalid', function () {
+  assunto.setCustomValidity('Por favor, diga qual é o assunto.');
+});
+assunto.addEventListener('input', function () {
+  assunto.setCustomValidity('');
+});
+
+
+mensagem.addEventListener('invalid', function () {
+  if (!mensagem.value.trim()) {
+    mensagem.setCustomValidity('Não pode ser em branco.');
+  } else if (mensagem.value.length < 30 || mensagem.value.length > 500) {
+    mensagem.setCustomValidity('Tem que ter ao menos 30 caracteres e no máximo 500 caracteres.');
+  } else {
+    mensagem.setCustomValidity('');
+  }
+});
+
+mensagem.addEventListener('input', function () {
+  mensagem.setCustomValidity('');
+  
+  if (mensagem.value.length < 30 || mensagem.value.length > 500) {
+    mensagem.setCustomValidity('Tem que ter ao menos 30 caracteres e no máximo 500 caracteres.');
+  }
+});
     </script>
   </body>
 </html>
