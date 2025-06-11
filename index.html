@@ -66,7 +66,7 @@
                   uma produção agrícola mais eficiente, sustentável e voltada
                   ao combate à fome.
                 </p>
-                <p>Segue o link do video do projeto. <a href="https://youtu.be/x8GtKRavuck">Clique aqui</a></p>
+                <p>Segue o link do video do projeto. <a href="https://youtu.be/O7c_C-Y0F1s">Clique aqui</a></p>
               </div>
             </div>
 
@@ -260,13 +260,13 @@
             <div class="fale-form bg-dark bg-opacity-50 p-4 rounded">
               <h5 class="mb-1">Mande uma mensagem</h5>
               <h3 class="mb-3">Contato direto</h3>
-              <form>
+              <form id="contactForm">
                 <label for="nome" class="form-label">Seu nome</label>
                 <input
                   type="text"
                   id="nome"
                   class="form-control mb-3"
-                  placeholder="Escreva aqui"
+                  placeholder="Escreva seu nome completo"
                 />
 
                 <label for="email" class="form-label">Email</label>
@@ -308,77 +308,83 @@
       </div>
     </section>
 
-    <script>
-      function iniciarNavegacaoSuave() {
-          const links = document.querySelectorAll('.nav li a');
-          
-          links.forEach(link => {
-              link.addEventListener('click', function(e) {
-                  e.preventDefault();
-                  
-                  const href = this.getAttribute('href');
-                  if (href === '#') return;
-                  
-                  const secaoAlvo = document.querySelector(href);
-                  if (secaoAlvo) {
-                      window.scrollTo({
-                          top: secaoAlvo.offsetTop,
-                          behavior: 'smooth'
-                      });
-                  }
-              });
-          });
-      }
+     <!-- Seção FAQ -->
+    <section id="faq-section" class="faq-section">
+      <div class="container">
+        <div class="faq-header text-center">
+          <h2>Perguntas Frequentes</h2>
+          <p>Tire suas dúvidas sobre nossa tecnologia agrícola</p>
+        </div>
 
-      document.addEventListener('DOMContentLoaded', iniciarNavegacaoSuave);
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h5>Como funciona o monitoramento por IA da lavoura?</h5>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Nosso sistema utiliza sensores IoT instalados na propriedade que coletam dados sobre umidade do solo, temperatura, pH e outros parâmetros essenciais. Esses dados são processados por algoritmos de inteligência artificial que analisam padrões, identificam anomalias e geram recomendações personalizadas para otimizar sua produção.</p>
+            </div>
+          </div>
 
-      
-const nome = document.getElementById('nome');
-const email = document.getElementById('email');
-const assunto = document.getElementById('assunto');
-const mensagem = document.getElementById('mensagem');
+          <div class="faq-item">
+            <div class="faq-question">
+              <h5>Quanto custa para implementar o sistema na minha fazenda?</h5>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>O investimento varia conforme o tamanho da propriedade e as necessidades específicas. Oferecemos planos flexíveis a partir de R$ 299/mês para pequenos produtores. Para propriedades maiores, fazemos um orçamento personalizado. O retorno do investimento normalmente acontece em 6-12 meses através da otimização da produção.</p>
+            </div>
+          </div>
 
+          <div class="faq-item">
+            <div class="faq-question">
+              <h5>O sistema funciona em qualquer tipo de cultura?</h5>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Sim! Nossa tecnologia é adaptável para diversas culturas como soja, milho, café, cana-de-açúcar, frutas, hortaliças e pastagens. Os algoritmos são treinados com dados específicos de cada tipo de plantação, garantindo recomendações precisas para sua cultura.</p>
+            </div>
+          </div>
 
-nome.addEventListener('invalid', function () {
-   nome.setCustomValidity('Por favor, insira um nome e sobrenome.');
-  });
-nome.addEventListener('input', function () {
-  nome.setCustomValidity('');
-  });
+          <div class="faq-item">
+            <div class="faq-question">
+              <h5>Preciso de internet para usar o sistema?</h5>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Para o funcionamento completo, é necessária conexão com internet, mas desenvolvemos soluções para áreas rurais com sinal limitado. Os sensores podem armazenar dados localmente e sincronizar quando há conexão disponível. Também oferecemos parcerias para instalação de internet via satélite.</p>
+            </div>
+          </div>
 
-email.addEventListener('invalid', function () {
-  email.setCustomValidity('Por favor, insira um email válido.');
-});
-email.addEventListener('input', function () {
-  email.setCustomValidity('');
-});
+          <div class="faq-item">
+            <div class="faq-question">
+              <h5>Como recebo os relatórios e alertas?</h5>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Você recebe todas as informações através do WhatsApp, e-mail ou pelo nosso aplicativo móvel. Os alertas críticos são enviados em tempo real, enquanto relatórios detalhados são gerados semanalmente. Você pode personalizar quando e como quer receber cada tipo de informação.</p>
+            </div>
+          </div>
 
+          <div class="faq-item">
+            <div class="faq-question">
+              <h5>Quanto tempo leva para ver resultados?</h5>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Os primeiros insights aparecem já na primeira semana após a instalação. Melhorias significativas na produtividade são observadas geralmente no primeiro ciclo de cultivo (2-4 meses). O sistema fica mais preciso com o tempo, aprendendo as características específicas da sua propriedade.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-assunto.addEventListener('invalid', function () {
-  assunto.setCustomValidity('Por favor, diga qual é o assunto.');
-});
-assunto.addEventListener('input', function () {
-  assunto.setCustomValidity('');
-});
+    <!-- Botão Voltar ao Topo -->
+    <button id="backToTop" class="back-to-top" title="Voltar ao topo">
+      <span class="material-symbols-outlined">arrow_upward</span>
+    </button>
 
-
-mensagem.addEventListener('invalid', function () {
-  if (!mensagem.value.trim()) {
-    mensagem.setCustomValidity('Não pode ser em branco.');
-  } else if (mensagem.value.length < 30 || mensagem.value.length > 500) {
-    mensagem.setCustomValidity('Tem que ter ao menos 30 caracteres e no máximo 500 caracteres.');
-  } else {
-    mensagem.setCustomValidity('');
-  }
-});
-
-mensagem.addEventListener('input', function () {
-  mensagem.setCustomValidity('');
-  
-  if (mensagem.value.length < 30 || mensagem.value.length > 500) {
-    mensagem.setCustomValidity('Tem que ter ao menos 30 caracteres e no máximo 500 caracteres.');
-  }
-});
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
